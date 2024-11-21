@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #3f4b5d, #1d2635);
+    color: #fff;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #f5a623;
+    margin-bottom: 20px;
+}
+
+p, h1 {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Section Styling */
+.section {
+    display: none;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 450px;
+}
+
+/* Show the profile section by default */
+#login-section {
+    display: block;
+}
+
+input[type="text"], input[type="password"], input[type="number"], select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #333;
+    border: none;
+    color: #f5a623;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus, select:focus {
+    outline: none;
+    border: 2px solid #f5a623;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background: #f5a623;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #e0a81f;
+}
+
+/* Button Styling Variants */
+.store-btn {
+    background-color: #b49260;
+}
+
+.game-btn {
+    background-color: #6c87a1;
+}
+
+.logout-btn {
+    background-color: #8b4d47;
+}
+
+/* Balance & Coins Text */
+.balance {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.coins-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f5a623;
+}
+
+/* Store Styling */
+#store-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.store-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #f5a623;
+    border: 1px solid #f5a623;
+    cursor: pointer;
+}
+
+.store-item:hover {
+    background: #f5a623;
+    color: #1d2635;
+}
+
+select, input {
+    font-size: 18px;
+    padding: 15px;
+}
+
+/* Error Styling */
+.error {
+    color: #ff4d4d;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:disabled {
+    background: #444;
+    cursor: not-allowed;
+}
+
+/* Mobile-Friendly */
+@media screen and (max-width: 600px) {
+    .section {
+        width: 95%;
+    }
+    
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    input, select {
+        font-size: 14px;
+    }
+  }
